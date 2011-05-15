@@ -10,28 +10,20 @@
                  } %>
       <div id="contact_form">
         <p>
-          <div class='field'>
-              <%= f.required_label :name %>
-              <%= f.text_field :name, :class => "input1" %>
-            </div>
+          <%= f.required_label :name %>
+          <%= f.text_field :name, :class => "input1" %>
         </p>
         <p>
-          <div class='field'>
-            <%= f.required_label :email %>
-            <%= f.text_field :email, :class => "input1" %>
-          </div>
+          <%= f.required_label :email %>
+          <%= f.text_field :email, :class => "input1" %>
         </p>
         <p>
-          <div class='field'>
-            <%= f.label :phone %>
-            <%= f.text_field :phone, :class => "input1" %>
-          </div>
+          <%= f.label :phone %>
+          <%= f.text_field :phone, :class => "input1" %>
         </p>
         <p>
-          <div class='field message_field'>
-            <%= f.required_label :message  %>
-            <%= f.text_area :message, :rows => 12, :class => "input2" %>
-          </div>
+          <%= f.required_label :message  %>
+          <%= f.text_area :message, :rows => 12, :class => "input2" %>
         </p>
         <p>
           <div class='actions'>
