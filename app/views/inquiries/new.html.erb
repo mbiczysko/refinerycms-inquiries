@@ -1,5 +1,5 @@
 <% content_for :body_content_left do %>
-  <div class='inquiries'>
+  <div class='inquiries contactdiv'>
     <%=raw @page[Page.default_parts.first.to_sym] %>
 
     <%= form_for @inquiry do |f| %>
@@ -10,19 +10,19 @@
                  } %>
       <div class='field'>
         <%= f.required_label :name %>
-        <%= f.text_field :name %>
+        <%= f.text_field :name, :class => "input1" %>
       </div>
       <div class='field'>
         <%= f.required_label :email %>
-        <%= f.text_field :email %>
+        <%= f.text_field :email, :class => "input1" %>
       </div>
       <div class='field'>
         <%= f.label :phone %>
-        <%= f.text_field :phone %>
+        <%= f.text_field :phone, :class => "input1" %>
       </div>
       <div class='field message_field'>
         <%= f.required_label :message  %>
-        <%= f.text_area :message, :rows => 8 %>
+        <%= f.text_area :message, :rows => 8, :class => "input1" %>
       </div>
       <div class='actions'>
         <%= f.submit t('.send') %>
